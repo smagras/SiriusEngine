@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   ICore.hpp
  * Author: STEVE
  *
@@ -8,8 +8,13 @@
 #ifndef ICORE_HPP
 #define	ICORE_HPP
 
+#include "ImageManager.hpp"
+
 #include "Engine.hpp"
 #include "Element.hpp"
+#include "Image.hpp"
+
+
 
 #endif	/* ICORE_HPP */
 

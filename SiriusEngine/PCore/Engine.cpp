@@ -1,7 +1,7 @@
-/* 
+/*
  * File:   CEngine.cpp
  * Author: STEVE
- * 
+ *
  * Created on 27 janvier 2014, 00:06
  */
 
@@ -12,47 +12,61 @@
 
 namespace sir{
 namespace PCore{
-    
-Engine::Engine() {
-    
-}
 
-Engine::Engine(const Engine& orig) {
+Engine::Engine() {
+    scenes = new std::vector<sir::PScene::Scene*>();
+
+    cout << "+------------------------------------------------------------------------+" << endl;
+    cout << "+ Sirius Engine                                                          +" << endl;
+    cout << "+ Version "<<CONST_VERSION<<"                                                          +" << endl;
+    cout << "+------------------------------------------------------------------------+" << endl;
 }
 
 Engine::~Engine() {
 }
 
-void Engine::run()
-{
-cout << "lol" << endl;
+void Engine::init(int width,int height,string title){
 
- // création de la fenêtre
-    sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
+    render = new sf::RenderWindow(sf::VideoMode(width, height), title);
+}
 
-    // on fait tourner le programme tant que la fenêtre n'a pas été fermée
-    while (window.isOpen())
+void Engine::run(){
+
+
+    while (render->isOpen())
     {
-        // on traite tous les évènements de la fenêtre qui ont été générés depuis la dernière itération de la boucle
         sf::Event event;
-        while (window.pollEvent(event))
+        while (render->pollEvent(event))
         {
-            // fermeture de la fenêtre lorsque l'utilisateur le souhaite
             if (event.type == sf::Event::Closed)
-                window.close();
+                render->close();
         }
 
-        // effacement de la fenêtre en noir
-        window.clear(sf::Color::Black);
 
-        // c'est ici qu'on dessine tout
-        // window.draw(...);
+        render->clear(sf::Color::Black);
 
-        // fin de la frame courante, affichage de tout ce qu'on a dessiné
-        window.display();
+
+        for (unsigned i=0; i< scenes->size(); i++)
+        {
+            //scenes->at(i)->update();
+            scenes->at(i)->draw();
+        }
+
+        render->display();
     }
 
-   
+
+}
+
+
+void Engine::add( PScene::Scene* scene ){
+
+    if (scene != NULL){
+        scene->setEngine(this);
+        scenes->push_back(scene);
+
+    }
+
 }
 
 } //PCore

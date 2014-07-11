@@ -8,6 +8,11 @@
 #ifndef STDAFX_HPP
 #define	STDAFX_HPP
 
+
+// CONSTANTE
+#define	CONST_VERSION "0.0.1"
+
+// STDLIB
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,14 +26,15 @@
 #include <deque>
 #include <typeinfo>
 
+// SFML
 #include <SFML/Graphics.hpp>
 #include <SFML/Network.hpp>
 #include <SFML/Audio.hpp>
 
+// BASIC FUNCTION
 #include "PSystem/ISystem.hpp"
 
-
-
+// NAMESPACE
 using namespace std;
 
 #endif	/* STDAFX_HPP */

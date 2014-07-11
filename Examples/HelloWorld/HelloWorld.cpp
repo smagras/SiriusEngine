@@ -4,15 +4,21 @@ namespace Examples{
 
 void HelloWorld::run()
 {
-    sir::PCore::Engine eeee;
-    eeee.run();
+    sir::PCore::Engine * myApp = new sir::PCore::Engine();
+    myApp->init(800,600,"Hello world");
 
-    sir::PSystem::Vector2i lol(3,3);
-    sir::PSystem::Vector2i mdr(8,8);
+    sir::PCore::ImageManager * imageManager = new sir::PCore::ImageManager();
+    imageManager->load("Examples/Resources/Images/house.bmp");
 
-    sir::PSystem::Vector2i hh = lol.distance(mdr);
+    sir::PScene::Scene * scene01 = new sir::PScene::Scene();
 
-    cout << hh.x << endl;
+    sir::PCore::Image * image01 = new sir::PCore::Image();
+    image01->use(imageManager->get("Examples/Resources/Images/house.bmp"));
+
+    myApp->add(scene01);
+    scene01->add(image01);
+
+    myApp->run();
 
 }
 

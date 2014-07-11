@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   predef.hpp
  * Author: STEVE
  *
@@ -6,16 +6,22 @@
  */
 
 #ifndef PREDEF_HPP
-#define	PREDEF_HPP
+#define PREDEF_HPP
+
 
 namespace sir{
-    
+
     namespace PCore{
         class Engine;
         class Element;
+        class Image;
     }
-    
+
+    namespace PScene{
+        class Scene;
+    }
+
 }
 
-#endif	/* PREDEF_HPP */
 
+#endif // PREDEF_HPP

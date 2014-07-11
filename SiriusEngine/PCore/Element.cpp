@@ -1,7 +1,7 @@
-/* 
- * File:   CElement.cpp
+/*
+ * File:   Element.cpp
  * Author: STEVE
- * 
+ *
  * Created on 27 janvier 2014, 20:13
  */
 
@@ -9,14 +9,12 @@
 
 namespace sir{
 namespace PCore{
-    
+
 
 Element::Element() {
-    type = ELMT_STANDAR;
+    setType(ELEMENT_STANDAR);
 }
 
-Element::Element(const Element& orig) {
-}
 
 Element::~Element() {
 }

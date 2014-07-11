@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   IScene.hpp
  * Author: STEVE
  *
@@ -8,6 +8,7 @@
 #ifndef ISCENE_HPP
 #define	ISCENE_HPP
 
+#include "Scene.hpp"
 
 #endif	/* ISCENE_HPP */
 

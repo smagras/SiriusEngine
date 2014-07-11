@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   SiriusEngine.hpp
  * Author: STEVE
  *
@@ -8,9 +8,12 @@
 #ifndef SIRIUSENGINE_HPP
 #define	SIRIUSENGINE_HPP
 
+
+
 #include "PSystem/ISystem.hpp"
-#include "PCore/ICore.hpp"
 #include "PScene/IScene.hpp"
+#include "PCore/ICore.hpp"
+
 #include "PInterface/IInterface.hpp"
 #include "PGame/IGame.hpp"
 #include "PEvent/IEvent.hpp"
