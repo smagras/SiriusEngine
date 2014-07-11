@@ -16,7 +16,7 @@ class Image : public Element
         /** Default destructor */
         virtual ~Image();
 
-        void use(sf::Image * image);
+        void use(sf::Texture * texture);
 
         void draw();
         void update();

@@ -15,10 +15,12 @@ Image::~Image()
     //dtor
 }
 
-void Image::use(sf::Image * image){
+void Image::use(sf::Texture * texture){
 
-    //sprite = new sf::Sprite();
-    //sprite->setImage(*image);
+    sprite = new sf::Sprite();
+
+    sprite->setTexture(*texture);
+
 }
 
 void Image::draw(){

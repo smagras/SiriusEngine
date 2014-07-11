@@ -8,7 +8,7 @@ void HelloWorld::run()
     myApp->init(800,600,"Hello world");
 
     sir::PCore::ImageManager * imageManager = new sir::PCore::ImageManager();
-    imageManager->load("Examples/Resources/Images/house.bmp");
+    imageManager->load("Examples/Resources/Images/house.bmp",255,0,255);
 
     sir::PScene::Scene * scene01 = new sir::PScene::Scene();
 

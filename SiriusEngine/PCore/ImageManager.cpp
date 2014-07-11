@@ -5,7 +5,7 @@ namespace PCore{
 
 ImageManager::ImageManager()
 {
-    images = new std::vector<sf::Image*>;
+    images = new std::vector<sf::Texture*>;
     imagesF = new std::vector<string>;
 }
 
@@ -26,10 +26,10 @@ void ImageManager::load(string file)
 
     if ( next )
     {
-        sf::Image *img = new sf::Image();
+        sf::Texture *img = new sf::Texture();
         if(img->loadFromFile(file))
         {
-            cout << file << "... Succes" << endl;
+            cout << file << "... OK" << endl;
         }
         else cout << file << "... Fail" << endl;
 
@@ -57,21 +57,28 @@ void ImageManager::load(string file,int r= -1,int g= -1,int b= -1)
 
     if ( next )
     {
-        sf::Image *img = new sf::Image();
-        if(img->loadFromFile(file))
+
+        sf::Image image;
+
+
+        if(image.loadFromFile(file))
         {
-            cout << file << "... Succes" << endl;
+            cout << file << "... OK" << endl;
         }
         else cout << file << "... Fail" << endl;
 
         if(r > -1 && g > -1 && b > -1)
         {
-            img->createMaskFromColor(sf::Color(r, g, b));
-            //img->setSmooth(false);
+            image.createMaskFromColor(sf::Color(r, g, b));
+            sf::Texture *texture = new sf::Texture();
+            texture->loadFromImage(image);
+
+            texture->setSmooth(false);
+            imagesF->push_back(file);
+            images->push_back(texture);
         }
 
-        imagesF->push_back(file);
-        images->push_back(img);
+
 
     }
 
@@ -80,7 +87,7 @@ void ImageManager::load(string file,int r= -1,int g= -1,int b= -1)
 
 }
 
-sf::Image*  ImageManager::get(string file)
+sf::Texture*  ImageManager::get(string file)
 {
     for (unsigned i=0; i<imagesF->size(); i++)
     {

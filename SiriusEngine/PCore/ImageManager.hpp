@@ -29,11 +29,11 @@ class ImageManager
         /**
         Get an image
         */
-        sf::Image*  get(string file);
+        sf::Texture*  get(string file);
 
     private:
         std::vector<string>* imagesF;
-        std::vector<sf::Image*>* images;
+        std::vector<sf::Texture*>* images;
 };
 
 
