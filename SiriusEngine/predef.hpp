@@ -12,13 +12,15 @@
 namespace sir{
 
     namespace PCore{
+
         class Engine;
         class Element;
-        class Image;
+
     }
 
     namespace PScene{
         class Scene;
+        class Image;
     }
 
 }

@@ -39,6 +39,7 @@
 #include "../stdafx.hpp"
 #include "../predef.hpp"
 
+#include "ImageManager.hpp"
 
 namespace sir{
 namespace PCore{
@@ -70,13 +71,20 @@ public:
     void add(sir::PScene::Scene* scene);
 
 
+    ImageManager * getImageManager() {return imageManager;}
 
     sf::RenderWindow * getRender() {return render;}
+
+    int getFramerate() {return framerate;}
 
 private:
 
     std::vector<sir::PScene::Scene*>* scenes;
     sf::RenderWindow *render;
+    ImageManager * imageManager;
+
+    sf::Clock clock;
+    int framerate;
 
 };
 

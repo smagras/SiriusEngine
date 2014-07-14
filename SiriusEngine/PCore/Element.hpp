@@ -23,9 +23,7 @@ enum ElementType {
     ELEMENT_STANDAR,
     ELEMENT_IMAGE,
     ELEMENT_SPRITE
- };
-
-
+};
 
 class Element {
 public:

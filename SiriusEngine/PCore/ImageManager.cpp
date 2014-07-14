@@ -96,6 +96,7 @@ sf::Texture*  ImageManager::get(string file)
             return images->at(i);
         }
     }
+    cout << "! ERROR: File doesn't exist: " << file << endl;
     return NULL;
 }
 

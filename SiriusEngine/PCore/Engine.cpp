@@ -15,11 +15,13 @@ namespace PCore{
 
 Engine::Engine() {
     scenes = new std::vector<sir::PScene::Scene*>();
+    imageManager = new ImageManager();
 
     cout << "+------------------------------------------------------------------------+" << endl;
-    cout << "+ Sirius Engine                                                          +" << endl;
-    cout << "+ Version "<<CONST_VERSION<<"                                                          +" << endl;
-    cout << "+------------------------------------------------------------------------+" << endl;
+    cout << "+ SIRIUS ENGINE                                                          +" << endl;
+    cout << "+ VERSION "<<CONST_VERSION<<"                                                          +" << endl;
+    cout << "+ GITHUB: https://github.com/smagras/SiriusEngine                        +" << endl;
+    cout << "+------------------------------------------------------------------------+" << endl<< endl;
 }
 
 Engine::~Engine() {
@@ -28,6 +30,7 @@ Engine::~Engine() {
 void Engine::init(int width,int height,string title){
 
     render = new sf::RenderWindow(sf::VideoMode(width, height), title);
+    render->setFramerateLimit(70);
 }
 
 void Engine::run(){
@@ -35,6 +38,8 @@ void Engine::run(){
 
     while (render->isOpen())
     {
+        clock.restart();
+
         sf::Event event;
         while (render->pollEvent(event))
         {
@@ -53,6 +58,10 @@ void Engine::run(){
         }
 
         render->display();
+
+        framerate =  1 / clock.getElapsedTime().asSeconds() ;
+        std::cout << framerate << std::endl;
+
     }
 
 

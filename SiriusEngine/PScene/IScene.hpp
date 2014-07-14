@@ -9,6 +9,7 @@
 #define	ISCENE_HPP
 
 #include "Scene.hpp"
+#include "Image.hpp"
 
 #endif	/* ISCENE_HPP */
 
