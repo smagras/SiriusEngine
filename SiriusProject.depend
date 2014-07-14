@@ -13,7 +13,7 @@
 1391422130 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\isystem.hpp
 	"Vector2.hpp"
 
-1391422130 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\vector2.hpp
+1405370133 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\vector2.hpp
 	<math.h>
 	"Vector2.tpp"
 
@@ -30,9 +30,9 @@
 	"ImageManager.hpp"
 	"../PScene/Scene.hpp"
 
-1405361686 c:\users\steve\desktop\projet\siriusproject\siriusengine\predef.hpp
+1405370164 c:\users\steve\desktop\projet\siriusproject\siriusengine\predef.hpp
 
-1405030722 c:\users\steve\desktop\projet\siriusproject\siriusengine\stdafx.hpp
+1405375592 c:\users\steve\desktop\projet\siriusproject\siriusengine\stdafx.hpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
@@ -460,9 +460,10 @@
 	"../predef.hpp"
 	"../PScene/Scene.hpp"
 
-1405361415 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\iscene.hpp
+1405370267 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\iscene.hpp
 	"Scene.hpp"
 	"Image.hpp"
+	"Sprite.hpp"
 
 1391422130 c:\users\steve\desktop\projet\siriusproject\siriusengine\pinterface\iinterface.hpp
 
@@ -473,7 +474,7 @@
 1405029825 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\element.cpp
 	"Element.hpp"
 
-1405359923 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.cpp
+1405375454 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.cpp
 	"Engine.hpp"
 
 1374359408 c:\users\steve\desktop\projet\libs\sfml-2.1\include\sfml\audio.hpp
@@ -536,7 +537,7 @@
 	<SFML/System/Thread.hpp>
 	<vector>
 
-1405362504 source:c:\users\steve\desktop\projet\siriusproject\examples\helloworld\helloworld.cpp
+1405375427 source:c:\users\steve\desktop\projet\siriusproject\examples\helloworld\helloworld.cpp
 	"HelloWorld.hpp"
 
 1404949169 c:\users\steve\desktop\projet\siriusproject\examples\helloworld\helloworld.hpp
@@ -571,6 +572,14 @@
 	"../predef.hpp"
 	"Element.hpp"
 
-1405362461 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\image.cpp
+1405370231 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\image.cpp
 	"Image.hpp"
+
+1405374921 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\sprite.hpp
+	"../stdafx.hpp"
+	"../predef.hpp"
+	"Image.hpp"
+
+1405375193 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\sprite.cpp
+	"Sprite.hpp"
 

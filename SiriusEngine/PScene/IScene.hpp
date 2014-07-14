@@ -10,6 +10,7 @@
 
 #include "Scene.hpp"
 #include "Image.hpp"
+#include "Sprite.hpp"
 
 #endif	/* ISCENE_HPP */
 

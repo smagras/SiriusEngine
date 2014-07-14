@@ -21,6 +21,7 @@ namespace sir{
     namespace PScene{
         class Scene;
         class Image;
+        class Sprite;
     }
 
 }

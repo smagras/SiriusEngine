@@ -4,10 +4,10 @@
 namespace sir{
 namespace PScene{
 
-Image::Image() : sir::PCore::Element::Element()
+Image::Image() //: sir::PCore::Element::Element()
 {
-    setType(sir::PCore::ELEMENT_IMAGE);
-    sprite = NULL;
+   /* setType(sir::PCore::ELEMENT_IMAGE);
+    sprite = NULL;*/
 }
 
 Image::~Image()

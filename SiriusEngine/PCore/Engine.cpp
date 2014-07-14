@@ -60,7 +60,6 @@ void Engine::run(){
         render->display();
 
         framerate =  1 / clock.getElapsedTime().asSeconds() ;
-        std::cout << framerate << std::endl;
 
     }
 
