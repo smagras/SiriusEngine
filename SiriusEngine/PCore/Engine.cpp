@@ -19,7 +19,7 @@ Engine::Engine() {
 
     cout << "+------------------------------------------------------------------------+" << endl;
     cout << "+ SIRIUS ENGINE                                                          +" << endl;
-    cout << "+ VERSION "<<CONST_VERSION<<"                                                          +" << endl;
+    cout << "+ VERSION "<<CONST_VERSION<<"                                                            +" << endl;
     cout << "+ GITHUB: https://github.com/smagras/SiriusEngine                        +" << endl;
     cout << "+------------------------------------------------------------------------+" << endl<< endl;
 }
@@ -53,7 +53,7 @@ void Engine::run(){
 
         for (unsigned i=0; i< scenes->size(); i++)
         {
-            //scenes->at(i)->update();
+            scenes->at(i)->update();
             scenes->at(i)->draw();
         }
 

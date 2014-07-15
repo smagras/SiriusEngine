@@ -35,6 +35,8 @@ class Scene
 
 
 
+
+
         void setEngine(PCore::Engine * _engine){engine =  _engine;}
         PCore::Engine * getEngine() {return engine;}
 
@@ -42,6 +44,8 @@ class Scene
 
         PCore::Engine * engine;
         std::vector<sir::PCore::Element*>* elements;
+
+
 };
 
 }

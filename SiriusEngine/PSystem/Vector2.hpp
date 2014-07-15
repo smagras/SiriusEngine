@@ -60,8 +60,8 @@ public:
 namespace sir{
 namespace PSystem{
 
-typedef class Vector2<int> Vector2i;
-typedef class Vector2<float> Vector2f;
+typedef class Vector2<int> Vector2I;
+typedef class Vector2<float> Vector2F;
 
 
 }//PSystem

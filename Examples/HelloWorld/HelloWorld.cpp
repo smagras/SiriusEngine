@@ -16,11 +16,13 @@ void HelloWorld::run()
 
     sir::PScene::Image * image01 = new sir::PScene::Image();
     image01->use(myApp->getImageManager()->get("Examples/Resources/Images/house.bmp"));
+    image01->crop(sir::PSystem::RectangleI(0,0,250,250));
     scene01->add(image01);
 
     sir::PScene::Sprite * sprite01 = new sir::PScene::Sprite();
     sprite01->use(myApp->getImageManager()->get("Examples/Resources/Images/character.bmp"));
-    sprite01->crop(0,0,32,32);
+    sprite01->init(sir::PSystem::RectangleI(0,0,32,32),5,200);
+    sprite01->play();
     scene01->add(sprite01);
 
     myApp->run();

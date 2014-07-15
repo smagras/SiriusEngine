@@ -20,7 +20,7 @@ class Image : public sir::PCore::Element
         void use(sf::Texture * _texture);
 
         /** Get only the image part inside rect */
-        void crop(int x,int y, int width,int height);
+        void crop(sir::PSystem::RectangleI _coords);
 
         void draw();
         void update();

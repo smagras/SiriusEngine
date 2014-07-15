@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   ISystem.hpp
  * Author: STEVE
  *
@@ -9,6 +9,7 @@
 #define	ISYSTEM_HPP
 
 #include "Vector2.hpp"
+#include "Rectangle.hpp"
 
 #endif	/* ISYSTEM_HPP */
 

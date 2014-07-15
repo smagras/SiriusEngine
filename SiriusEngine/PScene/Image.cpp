@@ -23,8 +23,8 @@ void Image::use(sf::Texture * _texture){
 
 }
 
-void Image::crop(int x,int y, int width,int height){
-    sprite->setTextureRect(sf::IntRect(x,y,width,height));
+void Image::crop(sir::PSystem::RectangleI  _coords){
+    sprite->setTextureRect(sf::IntRect(_coords.x,_coords.y,_coords.width,_coords.height));
 }
 
 void Image::draw(){
@@ -37,7 +37,7 @@ void Image::draw(){
 }
 
 void Image::update(){
-cout << "mdr" << endl;
+//cout << "mdr" << endl;
 }
 
 
