@@ -13,6 +13,8 @@
 #include "../stdafx.hpp"
 #include "../predef.hpp"
 
+#include "Graphic.hpp"
+
 namespace sir{
 namespace PCore{
 
@@ -25,7 +27,7 @@ enum ElementType {
     ELEMENT_SPRITE
 };
 
-class Element {
+class Element : public Graphic {
 public:
     Element();
     virtual ~Element();
@@ -51,6 +53,8 @@ public:
     void setType(ElementType t) {type = t;}
     ElementType getType() {return type;}
 
+    void updateGraphic() {}
+
 
 private:
     ElementType type;
@@ -62,6 +66,7 @@ private:
 } //sir
 
 #include "../PScene/Scene.hpp"
+
 
 #endif	/* CELEMENT_HPP */
 

@@ -43,6 +43,11 @@ public:
     bool operator== ( const Vector2& v2 ) const;
     bool operator!= ( const Vector2& v2 ) const;
 
+    void setX(Type _x) {x=_x;}
+    void setY(Type _y) {y=_y;}
+    Type getX() {return x;}
+    Type getY() {return y;}
+
 public:
     Type x, y;
 

@@ -15,14 +15,15 @@
 	"Vector2.hpp"
 	"Rectangle.hpp"
 
-1405454165 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\vector2.hpp
+1405548308 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\vector2.hpp
 	<math.h>
 	"Vector2.tpp"
 
 1391422130 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\vector2.tpp
 
-1405361406 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\icore.hpp
+1405547114 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\icore.hpp
 	"ImageManager.hpp"
+	"Graphic.hpp"
 	"Engine.hpp"
 	"Element.hpp"
 
@@ -457,9 +458,10 @@
 	<SFML/Network/Socket.hpp>
 	<vector>
 
-1405361698 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\element.hpp
+1405548624 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\element.hpp
 	"../stdafx.hpp"
 	"../predef.hpp"
+	"Graphic.hpp"
 	"../PScene/Scene.hpp"
 
 1405370267 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\iscene.hpp
@@ -473,7 +475,7 @@
 
 1391422130 c:\users\steve\desktop\projet\siriusproject\siriusengine\pevent\ievent.hpp
 
-1405029825 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\element.cpp
+1405548432 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\element.cpp
 	"Element.hpp"
 
 1405538569 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.cpp
@@ -539,7 +541,7 @@
 	<SFML/System/Thread.hpp>
 	<vector>
 
-1405538803 source:c:\users\steve\desktop\projet\siriusproject\examples\helloworld\helloworld.cpp
+1405548480 source:c:\users\steve\desktop\projet\siriusproject\examples\helloworld\helloworld.cpp
 	"HelloWorld.hpp"
 
 1404949169 c:\users\steve\desktop\projet\siriusproject\examples\helloworld\helloworld.hpp
@@ -569,12 +571,12 @@
 1405117147 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\imagemanager.cpp
 	"ImageManager.hpp"
 
-1405454668 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\image.hpp
+1405548746 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\image.hpp
 	"../stdafx.hpp"
 	"../predef.hpp"
 	"Element.hpp"
 
-1405455991 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\image.cpp
+1405548783 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\image.cpp
 	"Image.hpp"
 
 1405538742 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\sprite.hpp
@@ -591,7 +593,7 @@
 1405455137 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\rectangle.tpp
 	"Rectangle.hpp"
 
-1405534061 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\sfmltypetrad.hpp
+1405547528 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\sfmltypetrad.hpp
 	"../stdafx.hpp"
 
 1405536598 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\triggeringtimer.hpp
@@ -605,4 +607,11 @@
 
 1405536529 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\stopwatch.hpp
 	"../stdafx.hpp"
+
+1405549055 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\graphic.hpp
+	"../stdafx.hpp"
+	"../predef.hpp"
+
+1405547088 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\graphic.cpp
+	"Graphic.hpp"
 

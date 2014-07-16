@@ -24,6 +24,7 @@ class Image : public sir::PCore::Element
 
         void draw();
         void update();
+        void updateGraphic();
 
     private:
         sf::Sprite * sprite;

@@ -6,8 +6,8 @@ namespace PScene{
 
 Image::Image() //: sir::PCore::Element::Element()
 {
-   /* setType(sir::PCore::ELEMENT_IMAGE);
-    sprite = NULL;*/
+    setType(sir::PCore::ELEMENT_IMAGE);
+    sprite = new sf::Sprite();
 }
 
 Image::~Image()
@@ -17,7 +17,7 @@ Image::~Image()
 
 void Image::use(sf::Texture * _texture){
     texture = _texture;
-    sprite = new sf::Sprite();
+
 
     sprite->setTexture(*texture);
 
@@ -33,6 +33,12 @@ void Image::draw(){
         this->getScene()->getEngine()->getRender()->draw(*sprite);
 
     }
+
+}
+
+void Image::updateGraphic(){
+
+    sprite->setPosition(this->getPosition().getX(),this->getPosition().getY());
 
 }
 
