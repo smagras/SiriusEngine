@@ -25,7 +25,11 @@ void Sprite::update() {
 
     if (isPlaying){
 
-        nextFrame();
+        if (lastUpdate.asMilliseconds() + frameRate < this->getScene()->getEngine()->getElsapedTime().asMilliseconds() ){
+            nextFrame();
+            lastUpdate = this->getScene()->getEngine()->getElsapedTime();
+        }
+
     }
 
 }

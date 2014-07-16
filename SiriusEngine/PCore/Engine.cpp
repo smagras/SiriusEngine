@@ -31,6 +31,9 @@ void Engine::init(int width,int height,string title){
 
     render = new sf::RenderWindow(sf::VideoMode(width, height), title);
     render->setFramerateLimit(70);
+    clock.restart();
+    lastUpdate = this->getElsapedTime();
+    setUpdateTic(100);
 }
 
 void Engine::run(){
@@ -38,7 +41,7 @@ void Engine::run(){
 
     while (render->isOpen())
     {
-        clock.restart();
+        clockFPS.restart();
 
         sf::Event event;
         while (render->pollEvent(event))
@@ -49,17 +52,22 @@ void Engine::run(){
 
 
         render->clear(sf::Color::Black);
-
-
+        // Update itch spedified timing
+        bool needUpdate = false;
+        if (lastUpdate.asMilliseconds()+ getUpdateTic() < this->getElsapedTime().asMilliseconds() ){
+            needUpdate = true;
+            lastUpdate = this->getElsapedTime();
+        }
+        // draw
         for (unsigned i=0; i< scenes->size(); i++)
         {
-            scenes->at(i)->update();
+            if(needUpdate) scenes->at(i)->update();
             scenes->at(i)->draw();
         }
 
         render->display();
 
-        framerate =  1 / clock.getElapsedTime().asSeconds() ;
+        framerate =  1 / clockFPS.getElapsedTime().asSeconds() ;
 
     }
 

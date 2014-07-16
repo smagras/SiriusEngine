@@ -47,6 +47,7 @@ class Sprite : public Image
         int numberOfFrame;
         int frameRate;
         bool isPlaying;
+        sf::Time lastUpdate;
 };
 
 }

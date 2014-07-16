@@ -16,6 +16,7 @@
 					<Add directory="Examples/HelloWorld" />
 					<Add directory="SiriusEngine/PScene" />
 					<Add directory="SiriusEngine/PCore" />
+					<Add directory="SiriusEngine/PSystem" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-d" />
@@ -35,6 +36,7 @@
 					<Add directory="Examples/HelloWorld" />
 					<Add directory="SiriusEngine/PScene" />
 					<Add directory="SiriusEngine/PCore" />
+					<Add directory="SiriusEngine/PSystem" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -74,6 +76,8 @@
 		<Unit filename="SiriusEngine/PScene/Sprite.cpp" />
 		<Unit filename="SiriusEngine/PScene/Sprite.hpp" />
 		<Unit filename="SiriusEngine/PSystem/ISystem.hpp" />
+		<Unit filename="SiriusEngine/PSystem/Rectangle.hpp" />
+		<Unit filename="SiriusEngine/PSystem/Rectangle.tpp" />
 		<Unit filename="SiriusEngine/PSystem/Vector2.hpp" />
 		<Unit filename="SiriusEngine/PSystem/Vector2.tpp" />
 		<Unit filename="SiriusEngine/SiriusEngine.hpp" />

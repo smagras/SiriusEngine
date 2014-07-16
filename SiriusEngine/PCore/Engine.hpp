@@ -72,10 +72,17 @@ public:
 
 
     ImageManager * getImageManager() {return imageManager;}
-
     sf::RenderWindow * getRender() {return render;}
 
     int getFramerate() {return framerate;}
+
+    sir::PSystem::Time getElsapedTime() {return clock.getElapsedTime();}
+
+    /**
+    * Define updates frequencies, then the engine cant refresh data before this limit.
+    */
+    void setUpdateTic(int _updateTic) {updateTic = _updateTic;}
+    int getUpdateTic() {return updateTic;}
 
 private:
 
@@ -83,8 +90,11 @@ private:
     sf::RenderWindow *render;
     ImageManager * imageManager;
 
+    int updateTic;
+    sf::Clock clockFPS;
     sf::Clock clock;
     int framerate;
+    sf::Time lastUpdate;
 
 };
 
