@@ -25,6 +25,8 @@ void Sprite::update() {
 
     if (isPlaying){
 
+        //this->setPosition(sir::PSystem::Vector2F(this->getPosition().getX()+4,this->getPosition().getY()+4));
+
         if (lastUpdate.asMilliseconds() + frameRate < this->getScene()->getEngine()->getElsapedTime().asMilliseconds() ){
             nextFrame();
             lastUpdate = this->getScene()->getEngine()->getElsapedTime();

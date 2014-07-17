@@ -16,6 +16,8 @@ namespace PCore{
 Engine::Engine() {
     scenes = new std::vector<sir::PScene::Scene*>();
     imageManager = new ImageManager();
+    eventManager =  new sir::PEvent::EventManager();
+    eventManager->setEngine(this);
 
     cout << "+------------------------------------------------------------------------+" << endl;
     cout << "+ SIRIUS ENGINE                                                          +" << endl;
@@ -30,10 +32,10 @@ Engine::~Engine() {
 void Engine::init(int width,int height,string title){
 
     render = new sf::RenderWindow(sf::VideoMode(width, height), title);
-    render->setFramerateLimit(70);
+    render->setFramerateLimit(60);
     clock.restart();
     lastUpdate = this->getElsapedTime();
-    setUpdateTic(100);
+    setUpdateTic(60);
 }
 
 void Engine::run(){
@@ -43,12 +45,7 @@ void Engine::run(){
     {
         clockFPS.restart();
 
-        sf::Event event;
-        while (render->pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                render->close();
-        }
+        this->getEventManager()->update();
 
 
         render->clear(sf::Color::Black);

@@ -11,17 +11,26 @@
 
 namespace sir{
 
+
+
     namespace PCore{
 
         class Engine;
+        class Graphic;
         class Element;
 
     }
 
     namespace PScene{
+
         class Scene;
         class Image;
         class Sprite;
+    }
+
+    namespace PEvent{
+
+        class EventManager;
     }
 
 }

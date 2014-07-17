@@ -26,6 +26,12 @@ void HelloWorld::run()
     sprite01->setPosition(sir::PSystem::Vector2F(100,100));
     scene01->add(sprite01);
 
+    myApp->getEventManager()->bindClick(sprite01, SIRCallback {
+        sir::PScene::Sprite * sprite = (sir::PScene::Sprite *)e;
+        sprite->setPosition(sir::PSystem::Vector2F(400,400));
+        cout<<"ok"<<endl;
+    });
+
     myApp->run();
 
 }

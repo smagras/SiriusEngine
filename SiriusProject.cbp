@@ -17,6 +17,7 @@
 					<Add directory="SiriusEngine/PScene" />
 					<Add directory="SiriusEngine/PCore" />
 					<Add directory="SiriusEngine/PSystem" />
+					<Add directory="SiriusEngine/PEvent" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-d" />
@@ -37,6 +38,7 @@
 					<Add directory="SiriusEngine/PScene" />
 					<Add directory="SiriusEngine/PCore" />
 					<Add directory="SiriusEngine/PSystem" />
+					<Add directory="SiriusEngine/PEvent" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -51,6 +53,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add option="-std=c++11" />
 			<Add directory="../LIBS/SFML-2.1/include" />
 		</Compiler>
 		<Linker>
@@ -62,9 +65,13 @@
 		<Unit filename="SiriusEngine/PCore/Element.hpp" />
 		<Unit filename="SiriusEngine/PCore/Engine.cpp" />
 		<Unit filename="SiriusEngine/PCore/Engine.hpp" />
+		<Unit filename="SiriusEngine/PCore/Graphic.cpp" />
+		<Unit filename="SiriusEngine/PCore/Graphic.hpp" />
 		<Unit filename="SiriusEngine/PCore/ICore.hpp" />
 		<Unit filename="SiriusEngine/PCore/ImageManager.cpp" />
 		<Unit filename="SiriusEngine/PCore/ImageManager.hpp" />
+		<Unit filename="SiriusEngine/PEvent/EventManager.cpp" />
+		<Unit filename="SiriusEngine/PEvent/EventManager.hpp" />
 		<Unit filename="SiriusEngine/PEvent/IEvent.hpp" />
 		<Unit filename="SiriusEngine/PGame/IGame.hpp" />
 		<Unit filename="SiriusEngine/PInterface/IInterface.hpp" />
@@ -78,6 +85,7 @@
 		<Unit filename="SiriusEngine/PSystem/ISystem.hpp" />
 		<Unit filename="SiriusEngine/PSystem/Rectangle.hpp" />
 		<Unit filename="SiriusEngine/PSystem/Rectangle.tpp" />
+		<Unit filename="SiriusEngine/PSystem/SfmlTypeTrad.hpp" />
 		<Unit filename="SiriusEngine/PSystem/Vector2.hpp" />
 		<Unit filename="SiriusEngine/PSystem/Vector2.tpp" />
 		<Unit filename="SiriusEngine/SiriusEngine.hpp" />

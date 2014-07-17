@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   IEvent.hpp
  * Author: STEVE
  *
@@ -9,6 +9,7 @@
 #define	IEVENT_HPP
 
 
+#include "EventManager.hpp"
 
 #endif	/* IEVENT_HPP */
 

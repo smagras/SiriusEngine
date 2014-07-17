@@ -27,15 +27,16 @@
 	"Engine.hpp"
 	"Element.hpp"
 
-1405538956 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.hpp
+1405627853 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.hpp
 	"../stdafx.hpp"
 	"../predef.hpp"
 	"ImageManager.hpp"
 	"../PScene/Scene.hpp"
+	"../PEvent/EventManager.hpp"
 
-1405370164 c:\users\steve\desktop\projet\siriusproject\siriusengine\predef.hpp
+1405630435 c:\users\steve\desktop\projet\siriusproject\siriusengine\predef.hpp
 
-1405533984 c:\users\steve\desktop\projet\siriusproject\siriusengine\stdafx.hpp
+1405630480 c:\users\steve\desktop\projet\siriusproject\siriusengine\stdafx.hpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
@@ -473,12 +474,13 @@
 
 1391422130 c:\users\steve\desktop\projet\siriusproject\siriusengine\pgame\igame.hpp
 
-1391422130 c:\users\steve\desktop\projet\siriusproject\siriusengine\pevent\ievent.hpp
+1405552036 c:\users\steve\desktop\projet\siriusproject\siriusengine\pevent\ievent.hpp
+	"EventManager.hpp"
 
 1405548432 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\element.cpp
 	"Element.hpp"
 
-1405538569 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.cpp
+1405631274 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.cpp
 	"Engine.hpp"
 
 1374359408 c:\users\steve\desktop\projet\libs\sfml-2.1\include\sfml\audio.hpp
@@ -541,7 +543,7 @@
 	<SFML/System/Thread.hpp>
 	<vector>
 
-1405548480 source:c:\users\steve\desktop\projet\siriusproject\examples\helloworld\helloworld.cpp
+1405631826 source:c:\users\steve\desktop\projet\siriusproject\examples\helloworld\helloworld.cpp
 	"HelloWorld.hpp"
 
 1404949169 c:\users\steve\desktop\projet\siriusproject\examples\helloworld\helloworld.hpp
@@ -571,12 +573,12 @@
 1405117147 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\imagemanager.cpp
 	"ImageManager.hpp"
 
-1405548746 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\image.hpp
+1405627494 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\image.hpp
 	"../stdafx.hpp"
 	"../predef.hpp"
-	"Element.hpp"
+	"../PCore/Element.hpp"
 
-1405548783 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\image.cpp
+1405549049 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\image.cpp
 	"Image.hpp"
 
 1405538742 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\sprite.hpp
@@ -584,7 +586,7 @@
 	"../predef.hpp"
 	"Image.hpp"
 
-1405538774 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\sprite.cpp
+1405550146 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\sprite.cpp
 	"Sprite.hpp"
 
 1405455103 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\rectangle.hpp
@@ -612,6 +614,15 @@
 	"../stdafx.hpp"
 	"../predef.hpp"
 
-1405547088 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\graphic.cpp
+1405549022 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\graphic.cpp
 	"Graphic.hpp"
+
+1405631565 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pevent\eventmanager.cpp
+	"EventManager.hpp"
+
+1405631475 c:\users\steve\desktop\projet\siriusproject\siriusengine\pevent\eventmanager.hpp
+	"../stdafx.hpp"
+	"../predef.hpp"
+	"../PCore/Engine.hpp"
+	"../PCore/Element.hpp"
 

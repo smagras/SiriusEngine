@@ -84,6 +84,9 @@ public:
     void setUpdateTic(int _updateTic) {updateTic = _updateTic;}
     int getUpdateTic() {return updateTic;}
 
+
+    sir::PEvent::EventManager * getEventManager() {return eventManager;}
+
 private:
 
     std::vector<sir::PScene::Scene*>* scenes;
@@ -95,6 +98,7 @@ private:
     sf::Clock clock;
     int framerate;
     sf::Time lastUpdate;
+    sir::PEvent::EventManager * eventManager;
 
 };
 
@@ -103,6 +107,7 @@ private:
 } //sir
 
 #include "../PScene/Scene.hpp"
+#include "../PEvent/EventManager.hpp"
 
 #endif	/* ENGINE_HPP */
 
