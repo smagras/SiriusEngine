@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   IGame.hpp
  * Author: STEVE
  *
@@ -8,7 +8,9 @@
 #ifndef IGAME_HPP
 #define	IGAME_HPP
 
-
+#include "Game.hpp"
+#include "GameElement.hpp"
+#include "ISOMap.hpp"
 
 #endif	/* IGAME_HPP */
 

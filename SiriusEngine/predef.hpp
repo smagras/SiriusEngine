@@ -28,6 +28,14 @@ namespace sir{
         class Sprite;
     }
 
+    namespace PGame{
+
+        class Game;
+        class GameElement;
+        class ISOMap;
+
+    }
+
     namespace PEvent{
 
         class EventManager;

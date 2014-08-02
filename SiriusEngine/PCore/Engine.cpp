@@ -62,9 +62,13 @@ void Engine::run(){
             scenes->at(i)->draw();
         }
 
+
+
         render->display();
 
         framerate =  1 / clockFPS.getElapsedTime().asSeconds() ;
+
+        cout << this->getFramerate() << endl;
 
     }
 

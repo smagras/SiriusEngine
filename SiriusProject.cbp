@@ -19,6 +19,7 @@
 					<Add directory="SiriusEngine/PCore" />
 					<Add directory="SiriusEngine/PSystem" />
 					<Add directory="SiriusEngine/PEvent" />
+					<Add directory="SiriusEngine/PGame" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-d" />
@@ -40,6 +41,7 @@
 					<Add directory="SiriusEngine/PCore" />
 					<Add directory="SiriusEngine/PSystem" />
 					<Add directory="SiriusEngine/PEvent" />
+					<Add directory="SiriusEngine/PGame" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -61,6 +63,8 @@
 		</Linker>
 		<Unit filename="Examples/HelloWorld/HelloWorld.cpp" />
 		<Unit filename="Examples/HelloWorld/HelloWorld.hpp" />
+		<Unit filename="Examples/MapISO/MapISO.cpp" />
+		<Unit filename="Examples/MapISO/MapISO.hpp" />
 		<Unit filename="SiriusEngine/PCore/Element.cpp" />
 		<Unit filename="SiriusEngine/PCore/Element.hpp" />
 		<Unit filename="SiriusEngine/PCore/Engine.cpp" />
@@ -73,7 +77,13 @@
 		<Unit filename="SiriusEngine/PEvent/EventManager.cpp" />
 		<Unit filename="SiriusEngine/PEvent/EventManager.hpp" />
 		<Unit filename="SiriusEngine/PEvent/IEvent.hpp" />
+		<Unit filename="SiriusEngine/PGame/Game.cpp" />
+		<Unit filename="SiriusEngine/PGame/Game.hpp" />
+		<Unit filename="SiriusEngine/PGame/GameElement.cpp" />
+		<Unit filename="SiriusEngine/PGame/GameElement.hpp" />
 		<Unit filename="SiriusEngine/PGame/IGame.hpp" />
+		<Unit filename="SiriusEngine/PGame/ISOMap.cpp" />
+		<Unit filename="SiriusEngine/PGame/ISOMap.hpp" />
 		<Unit filename="SiriusEngine/PInterface/IInterface.hpp" />
 		<Unit filename="SiriusEngine/PScene/IScene.hpp" />
 		<Unit filename="SiriusEngine/PScene/Image.cpp" />

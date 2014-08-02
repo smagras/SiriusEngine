@@ -5,11 +5,13 @@
 
 namespace Examples{
 
-class MapISO
+class MapISO : public sir::PCore::Engine
 {
     public:
         MapISO(){}
-        void run();
+        void start();
+        sir::PGame::Game * game;
+
 };
 
 }

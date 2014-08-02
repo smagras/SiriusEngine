@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
 
     // How to make a map
     Examples::MapISO * mapISO = new Examples::MapISO();
-    mapISO->run();
+    mapISO->start();
 
     return true;
 }

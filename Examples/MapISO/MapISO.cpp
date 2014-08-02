@@ -2,40 +2,56 @@
 
 namespace Examples{
 
-void MapISO::run()
+void MapISO::start()
 {
-    sir::PCore::Engine * myApp = new sir::PCore::Engine();
-    myApp->init(800,600,"Hello world");
+    //sir::PCore::Engine * myApp = new sir::PCore::Engine();
+    this->init(800,600,"Hello world");
 
-    myApp->getImageManager()->load("Examples/Resources/Images/house.bmp",255,0,255);
-    myApp->getImageManager()->load("Examples/Resources/Images/character.bmp",255,0,255);
+    this->getImageManager()->load("Examples/Resources/Images/terrain.png");
+    this->getImageManager()->load("Examples/Resources/Images/character.bmp",255,0,255);
+
+
+
+
+    game = new sir::PGame::Game();
+    game->setSize(sir::PSystem::Vector2F(800,500));
+    game->setCameraPosition(sir::PSystem::Vector2F(200,-200));
+    this->add(game);
+
+
+    sir::PGame::ISOMap * isomap = new sir::PGame::ISOMap();
+    isomap->use(this->getImageManager()->get("Examples/Resources/Images/terrain.png"));
+
+    game->add(isomap);
+
+
+
 
 
     sir::PScene::Scene * scene01 = new sir::PScene::Scene();
-    scene01->setSize(sir::PSystem::Vector2F(500,500));
-    myApp->add(scene01);
-
-
-    sir::PScene::Image * image01 = new sir::PScene::Image();
-    image01->use(myApp->getImageManager()->get("Examples/Resources/Images/house.bmp"));
-    image01->crop(sir::PSystem::RectangleI(0,0,250,250));
-    scene01->add(image01);
+    scene01->setSize(sir::PSystem::Vector2F(100,100));
+    this->add(scene01);
 
     sir::PScene::Sprite * sprite01 = new sir::PScene::Sprite();
-    sprite01->use(myApp->getImageManager()->get("Examples/Resources/Images/character.bmp"));
+    sprite01->use(this->getImageManager()->get("Examples/Resources/Images/character.bmp"));
     sprite01->init(sir::PSystem::RectangleI(0,0,32,32),5,200);
     sprite01->play();
-    sprite01->setPosition(sir::PSystem::Vector2F(100,100));
+
     sprite01->setSize(sir::PSystem::Vector2F(40,40));
     scene01->add(sprite01);
 
-    myApp->getEventManager()->bindRightClick(sprite01, SIRCallback {
+
+
+    this->getEventManager()->bindRightClick(sprite01, SIRCallback {
         sir::PScene::Sprite * sprite = (sir::PScene::Sprite *)e;
-        sprite->setPosition(sir::PSystem::Vector2F(400,400));
+        MapISO* eng = (MapISO*)sprite->getScene()->getEngine();
+        eng->game->setCameraPosition(sir::PSystem::Vector2F(200,eng->game->getCameraPosition().y+100));
         cout<<"ok"<<endl;
     });
 
-    myApp->run();
+
+
+    this->run();
 
 }
 
