@@ -6,10 +6,13 @@
 #include "../predef.hpp"
 
 
+#include "Graphic.hpp"
+
+
 namespace sir{
 namespace PScene{
 
-class Scene
+class Scene : public sir::PCore::Graphic
 {
     public:
         /** Default constructor */
@@ -33,6 +36,9 @@ class Scene
         void add(sir::PCore::Element* element);
 
 
+        void updateGraphic();
+
+
 
 
 
@@ -40,9 +46,13 @@ class Scene
         void setEngine(PCore::Engine * _engine){engine =  _engine;}
         PCore::Engine * getEngine() {return engine;}
 
-    private:
 
+        sf::RenderTexture * getRender() {return render;}
+
+    private:
+        sf::Sprite * spriteRender;
         PCore::Engine * engine;
+        sf::RenderTexture * render;
         std::vector<sir::PCore::Element*>* elements;
 
 

@@ -20,14 +20,14 @@ class EventManager
         EventManager();
 
         void update();
-        void bindClick(sir::PCore::Element* _elementCliked,void (*callback)(sir::PCore::Element*));
+        void bindRightClick(sir::PCore::Element* _elementCliked,void (*callback)(sir::PCore::Element*));
 
         void setEngine(PCore::Engine * _engine){engine =  _engine;}
         PCore::Engine * getEngine() {return engine;}
 
     private:
         PCore::Engine * engine;
-        std::vector<Event>* eventsCliked;
+        std::vector<Event>* eventsRightClick;
 };
 
 }

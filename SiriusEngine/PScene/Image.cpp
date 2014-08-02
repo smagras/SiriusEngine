@@ -4,10 +4,11 @@
 namespace sir{
 namespace PScene{
 
-Image::Image() //: sir::PCore::Element::Element()
+Image::Image()
 {
     setType(sir::PCore::ELEMENT_IMAGE);
     sprite = new sf::Sprite();
+
 }
 
 Image::~Image()
@@ -30,7 +31,7 @@ void Image::crop(sir::PSystem::RectangleI  _coords){
 void Image::draw(){
     if(sprite){
 
-        this->getScene()->getEngine()->getRender()->draw(*sprite);
+        this->getScene()->getRender()->draw(*sprite);
 
     }
 

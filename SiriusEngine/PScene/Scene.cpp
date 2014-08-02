@@ -6,6 +6,8 @@ namespace PScene{
 Scene::Scene()
 {
     elements = new std::vector<sir::PCore::Element*>();
+    render = new sf::RenderTexture();
+    spriteRender = new  sf::Sprite();
 }
 
 Scene::~Scene()
@@ -26,15 +28,24 @@ void Scene::add(sir::PCore::Element* element){
 }
 
 void Scene::draw(){
-
+    render->clear();
     for (unsigned i=0; i< elements->size(); i++)
     {
 
         elements->at(i)->draw();
     }
 
+    spriteRender->setTexture(render->getTexture());
+    this->getEngine()->getRender()->draw(*spriteRender);
+
+    render->display();
 }
 
+
+ void Scene::updateGraphic() {
+     spriteRender->setPosition(this->getPosition().x,this->getPosition().y);
+     render->create(this->getSize().x,this->getSize().y);
+ }
 
 void Scene::update(){
 

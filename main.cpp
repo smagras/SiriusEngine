@@ -5,16 +5,21 @@
  * Created on 26 janvier 2014, 21:58
  */
 
-#include "Examples/HelloWorld/HelloWorld.hpp"
+//#include "Examples/HelloWorld/HelloWorld.hpp"
+#include "Examples/MapISO/MapISO.hpp"
 
-using namespace Examples;
+
 
 
 int main(int argc, char** argv) {
 
     // Basic example
-    Examples::HelloWorld * helloWorld = new Examples::HelloWorld();
-    helloWorld->run();
+    /*Examples::HelloWorld * helloWorld = new Examples::HelloWorld();
+    helloWorld->run();*/
+
+    // How to make a map
+    Examples::MapISO * mapISO = new Examples::MapISO();
+    mapISO->run();
 
     return true;
 }

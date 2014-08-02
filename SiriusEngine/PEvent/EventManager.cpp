@@ -7,20 +7,18 @@ namespace PEvent{
 
 EventManager::EventManager(){
 
-    eventsCliked = new std::vector<Event>();
+    eventsRightClick = new std::vector<Event>();
 }
 
-void EventManager::bindClick(sir::PCore::Element* _elementCliked,void (*callback)(sir::PCore::Element*)){
+void EventManager::bindRightClick(sir::PCore::Element* _elementCliked,void (*callback)(sir::PCore::Element*)){
 
-    //if (_elementCliked != NULL){
-        //void * f = callback(_elementCliked);
+    if (_elementCliked != NULL){
+
         sir::PEvent::Event event;
         event.element = _elementCliked;
         event.callback = callback;
-        eventsCliked->push_back(event);
-
-
-    //}
+        eventsRightClick->push_back(event);
+    }
 
 }
 
@@ -32,13 +30,26 @@ void EventManager::update(){
             this->getEngine()->getRender()->close();
         }
 
-        if (event.mouseButton.button == sf::Mouse::Right){
+        if (event.type == sf::Event::MouseButtonReleased)
+        {
+            if (event.mouseButton.button == sf::Mouse::Right){
 
-            for (unsigned i=0; i< eventsCliked->size(); i++)
-            {
-                eventsCliked->at(i).callback(eventsCliked->at(0).element);
+                for (unsigned i=0; i< eventsRightClick->size(); i++)
+                {
+                    sir::PCore::Element *elm = eventsRightClick->at(0).element;
+
+                    if (event.mouseButton.x >= elm->getPosition().x &&
+                        event.mouseButton.x <= elm->getPosition().x + elm->getSize().x &&
+                        event.mouseButton.y >= elm->getPosition().y &&
+                        event.mouseButton.y <= elm->getPosition().y + elm->getSize().y
+                        ){
+                            eventsRightClick->at(i).callback(eventsRightClick->at(0).element);
+                    }
+
+                }
+
+
             }
-
         }
 
     }

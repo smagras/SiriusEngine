@@ -1,8 +1,8 @@
-#include "HelloWorld.hpp"
+#include "MapISO.hpp"
 
 namespace Examples{
 
-void HelloWorld::run()
+void MapISO::run()
 {
     sir::PCore::Engine * myApp = new sir::PCore::Engine();
     myApp->init(800,600,"Hello world");

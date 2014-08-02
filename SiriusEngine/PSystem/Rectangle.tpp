@@ -1,8 +1,10 @@
 #include "Rectangle.hpp"
 
 
-namespace sir{
-namespace PSystem{
+namespace sir
+{
+namespace PSystem
+{
 
 
 

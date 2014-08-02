@@ -8,6 +8,7 @@ Sprite::Sprite() : Image::Image()
     setType(sir::PCore::ELEMENT_SPRITE);
     isPlaying = false;
 
+
 }
 
 Sprite::~Sprite()
@@ -51,6 +52,9 @@ void Sprite::play(){
     isPlaying = true;
 }
 
+void Sprite::stop(){
+    isPlaying = false;
+}
 void Sprite::nextFrame(){
     currentFrameNumber++;
     if (currentFrameNumber >= numberOfFrame) currentFrameNumber = 0;
