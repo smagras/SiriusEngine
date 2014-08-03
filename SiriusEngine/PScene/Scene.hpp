@@ -6,13 +6,14 @@
 #include "../predef.hpp"
 
 
+#include "Node.hpp"
 #include "Graphic.hpp"
 
 
 namespace sir{
 namespace PScene{
 
-class Scene : public sir::PCore::Graphic
+class Scene : public sir::PCore::Graphic, public sir::PCore::Node
 {
     public:
         /** Default constructor */

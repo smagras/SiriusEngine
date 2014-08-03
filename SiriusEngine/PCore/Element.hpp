@@ -13,6 +13,7 @@
 #include "../stdafx.hpp"
 #include "../predef.hpp"
 
+#include "Node.hpp"
 #include "Graphic.hpp"
 
 namespace sir{
@@ -27,7 +28,7 @@ enum ElementType {
     ELEMENT_SPRITE
 };
 
-class Element : public Graphic {
+class Element : public Graphic, public Node {
 public:
     Element();
     virtual ~Element();

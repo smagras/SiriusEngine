@@ -11,7 +11,7 @@
 
 // CONSTANTE
 #define	CONST_VERSION "0.1"
-#define SIRCallback [] (sir::PCore::Element * e)
+#define SIRCallback [] (sir::PCore::Node * e)
 
 // STDLIB
 #include <iostream>

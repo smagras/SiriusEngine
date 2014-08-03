@@ -15,6 +15,7 @@ namespace sir{
 
     namespace PCore{
 
+        class Node;
         class Engine;
         class Graphic;
         class Element;

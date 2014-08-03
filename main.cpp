@@ -17,6 +17,7 @@ int main(int argc, char** argv) {
     /*Examples::HelloWorld * helloWorld = new Examples::HelloWorld();
     helloWorld->run();*/
 
+
     // How to make a map
     Examples::MapISO * mapISO = new Examples::MapISO();
     mapISO->start();

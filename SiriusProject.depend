@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1407018792 source:c:\users\steve\desktop\projet\siriusproject\main.cpp
+1407081377 source:c:\users\steve\desktop\projet\siriusproject\main.cpp
 	"Examples/MapISO/MapISO.hpp"
 
 1405030599 c:\users\steve\desktop\projet\siriusproject\siriusengine\siriusengine.hpp
@@ -21,22 +21,24 @@
 
 1391422130 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\vector2.tpp
 
-1405547114 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\icore.hpp
+1407077122 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\icore.hpp
 	"ImageManager.hpp"
+	"Node.hpp"
 	"Graphic.hpp"
 	"Engine.hpp"
 	"Element.hpp"
 
-1405627853 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.hpp
+1407077168 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.hpp
 	"../stdafx.hpp"
 	"../predef.hpp"
 	"ImageManager.hpp"
+	"Node.hpp"
 	"../PScene/Scene.hpp"
 	"../PEvent/EventManager.hpp"
 
-1407011548 c:\users\steve\desktop\projet\siriusproject\siriusengine\predef.hpp
+1407077122 c:\users\steve\desktop\projet\siriusproject\siriusengine\predef.hpp
 
-1406979113 c:\users\steve\desktop\projet\siriusproject\siriusengine\stdafx.hpp
+1407077366 c:\users\steve\desktop\projet\siriusproject\siriusengine\stdafx.hpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
@@ -467,9 +469,10 @@
 	<SFML/Network/Socket.hpp>
 	<vector>
 
-1405548624 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\element.hpp
+1407077478 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\element.hpp
 	"../stdafx.hpp"
 	"../predef.hpp"
+	"Node.hpp"
 	"Graphic.hpp"
 	"../PScene/Scene.hpp"
 
@@ -491,7 +494,7 @@
 1405548432 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\element.cpp
 	"Element.hpp"
 
-1407015664 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.cpp
+1407065570 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.cpp
 	"Engine.hpp"
 
 1405061030 c:\users\steve\desktop\projet\libs\sfml-2.1\include\sfml\audio.hpp
@@ -557,15 +560,16 @@
 	<vector>
 	<string>
 
-1406992952 source:c:\users\steve\desktop\projet\siriusproject\examples\helloworld\helloworld.cpp
+1407077533 source:c:\users\steve\desktop\projet\siriusproject\examples\helloworld\helloworld.cpp
 	"HelloWorld.hpp"
 
 1404949169 c:\users\steve\desktop\projet\siriusproject\examples\helloworld\helloworld.hpp
 	"../../SiriusEngine/SiriusEngine.hpp"
 
-1406992671 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\scene.hpp
+1407077781 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\scene.hpp
 	"../stdafx.hpp"
 	"../predef.hpp"
+	"Node.hpp"
 	"Graphic.hpp"
 	"../PCore/Engine.hpp"
 	"../PCore/Element.hpp"
@@ -632,14 +636,14 @@
 1405549022 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\graphic.cpp
 	"Graphic.hpp"
 
-1406981384 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pevent\eventmanager.cpp
+1407078034 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pevent\eventmanager.cpp
 	"EventManager.hpp"
 
-1406981366 c:\users\steve\desktop\projet\siriusproject\siriusengine\pevent\eventmanager.hpp
+1407079046 c:\users\steve\desktop\projet\siriusproject\siriusengine\pevent\eventmanager.hpp
 	"../stdafx.hpp"
 	"../predef.hpp"
 	"../PCore/Engine.hpp"
-	"../PCore/Element.hpp"
+	"Node.hpp"
 
 1405061030 c:\users\steve\desktop\projet\libs\sfml-2.1\include\sfml\system\string.inl
 
@@ -658,7 +662,7 @@
 1406993828 c:\users\steve\desktop\projet\siriusproject\examples\map\map.hpp
 	"../../SiriusEngine/SiriusEngine.hpp"
 
-1407020101 source:c:\users\steve\desktop\projet\siriusproject\examples\mapiso\mapiso.cpp
+1407078229 source:c:\users\steve\desktop\projet\siriusproject\examples\mapiso\mapiso.cpp
 	"MapISO.hpp"
 
 1407018820 c:\users\steve\desktop\projet\siriusproject\examples\mapiso\mapiso.hpp
@@ -670,10 +674,10 @@
 	"../PGame/GameElement.hpp"
 	"../PGame/Game.hpp"
 
-1407019689 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pgame\isomap.cpp
+1407065570 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pgame\isomap.cpp
 	"ISOMap.hpp"
 
-1407017355 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pgame\game.cpp
+1407065468 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pgame\game.cpp
 	"Game.hpp"
 
 1407016973 c:\users\steve\desktop\projet\siriusproject\siriusengine\pgame\game.hpp
@@ -689,4 +693,11 @@
 
 1407011562 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pgame\gameelement.cpp
 	"GameElement.hpp"
+
+1407077122 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\node.hpp
+	"../stdafx.hpp"
+	"../predef.hpp"
+
+1407077122 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\node.cpp
+	"Node.hpp"
 

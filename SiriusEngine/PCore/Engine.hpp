@@ -40,12 +40,13 @@
 #include "../predef.hpp"
 
 #include "ImageManager.hpp"
+#include "Node.hpp"
 
 namespace sir{
 namespace PCore{
 
 
-class Engine {
+class Engine : public Node{
 public:
     Engine();
     virtual ~Engine();

@@ -10,6 +10,7 @@
 
 #include "ImageManager.hpp"
 
+#include "Node.hpp"
 #include "Graphic.hpp"
 #include "Engine.hpp"
 #include "Element.hpp"
