@@ -34,13 +34,23 @@ namespace sir{
         class Game;
         class GameElement;
         class ISOMap;
+        class Entity;
 
     }
+
+    namespace PInterface{
+
+        class InterfaceElement;
+        class Panel;
+
+    }
+
 
     namespace PEvent{
 
         class EventManager;
     }
+
 
 }
 

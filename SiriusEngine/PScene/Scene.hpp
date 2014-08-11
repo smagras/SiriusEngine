@@ -15,6 +15,8 @@ namespace PScene{
 
 class Scene : public sir::PCore::Graphic, public sir::PCore::Node
 {
+    friend class sir::PCore::Engine;
+
     public:
         /** Default constructor */
         Scene();
@@ -24,7 +26,7 @@ class Scene : public sir::PCore::Graphic, public sir::PCore::Node
         /**
         * Draw the scene
         */
-        void draw();
+        virtual void draw();
 
         /**
         * Calcul the scene
@@ -35,14 +37,10 @@ class Scene : public sir::PCore::Graphic, public sir::PCore::Node
         * Add an element to the scene
         */
         void add(sir::PCore::Element* element);
+        void add(sir::PScene::Scene* scene);
 
 
         void updateGraphic();
-
-
-
-
-
 
         void setEngine(PCore::Engine * _engine){engine =  _engine;}
         PCore::Engine * getEngine() {return engine;}
@@ -50,11 +48,15 @@ class Scene : public sir::PCore::Graphic, public sir::PCore::Node
 
         sf::RenderTexture * getRender() {return render;}
 
+    protected:
+         sf::Sprite * spriteRender;
+
     private:
-        sf::Sprite * spriteRender;
         PCore::Engine * engine;
         sf::RenderTexture * render;
         std::vector<sir::PCore::Element*>* elements;
+        std::vector<sir::PScene::Scene*>* scenes;
+
 
 
 };

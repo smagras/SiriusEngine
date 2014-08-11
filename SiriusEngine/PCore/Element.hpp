@@ -25,7 +25,8 @@ namespace PCore{
 enum ElementType {
     ELEMENT_STANDAR,
     ELEMENT_IMAGE,
-    ELEMENT_SPRITE
+    ELEMENT_SPRITE,
+    ELEMENT_ENTITY
 };
 
 class Element : public Graphic, public Node {

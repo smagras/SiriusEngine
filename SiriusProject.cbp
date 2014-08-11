@@ -20,6 +20,7 @@
 					<Add directory="SiriusEngine/PSystem" />
 					<Add directory="SiriusEngine/PEvent" />
 					<Add directory="SiriusEngine/PGame" />
+					<Add directory="SiriusEngine/PPlugin/Standard/DBox" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-d" />
@@ -42,6 +43,7 @@
 					<Add directory="SiriusEngine/PSystem" />
 					<Add directory="SiriusEngine/PEvent" />
 					<Add directory="SiriusEngine/PGame" />
+					<Add directory="SiriusEngine/PPlugin/Standard/DBox" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -65,6 +67,8 @@
 		<Unit filename="Examples/HelloWorld/HelloWorld.hpp" />
 		<Unit filename="Examples/MapISO/MapISO.cpp" />
 		<Unit filename="Examples/MapISO/MapISO.hpp" />
+		<Unit filename="Examples/SimpleGame/SimpleGame.cpp" />
+		<Unit filename="Examples/SimpleGame/SimpleGame.hpp" />
 		<Unit filename="SiriusEngine/PCore/Element.cpp" />
 		<Unit filename="SiriusEngine/PCore/Element.hpp" />
 		<Unit filename="SiriusEngine/PCore/Engine.cpp" />
@@ -74,9 +78,13 @@
 		<Unit filename="SiriusEngine/PCore/ICore.hpp" />
 		<Unit filename="SiriusEngine/PCore/ImageManager.cpp" />
 		<Unit filename="SiriusEngine/PCore/ImageManager.hpp" />
+		<Unit filename="SiriusEngine/PCore/Node.cpp" />
+		<Unit filename="SiriusEngine/PCore/Node.hpp" />
 		<Unit filename="SiriusEngine/PEvent/EventManager.cpp" />
 		<Unit filename="SiriusEngine/PEvent/EventManager.hpp" />
 		<Unit filename="SiriusEngine/PEvent/IEvent.hpp" />
+		<Unit filename="SiriusEngine/PGame/Entity.cpp" />
+		<Unit filename="SiriusEngine/PGame/Entity.hpp" />
 		<Unit filename="SiriusEngine/PGame/Game.cpp" />
 		<Unit filename="SiriusEngine/PGame/Game.hpp" />
 		<Unit filename="SiriusEngine/PGame/GameElement.cpp" />
@@ -85,6 +93,15 @@
 		<Unit filename="SiriusEngine/PGame/ISOMap.cpp" />
 		<Unit filename="SiriusEngine/PGame/ISOMap.hpp" />
 		<Unit filename="SiriusEngine/PInterface/IInterface.hpp" />
+		<Unit filename="SiriusEngine/PInterface/InterfaceElement.cpp" />
+		<Unit filename="SiriusEngine/PInterface/InterfaceElement.hpp" />
+		<Unit filename="SiriusEngine/PInterface/Panel.cpp" />
+		<Unit filename="SiriusEngine/PInterface/Panel.hpp" />
+		<Unit filename="SiriusEngine/PPlugin/IPlugin.hpp" />
+		<Unit filename="SiriusEngine/PPlugin/Standard/DBox/DBox.cpp" />
+		<Unit filename="SiriusEngine/PPlugin/Standard/DBox/DBox.hpp" />
+		<Unit filename="SiriusEngine/PPlugin/Standard/DBox/IDBox.hpp" />
+		<Unit filename="SiriusEngine/PPlugin/Standard/IStandard.hpp" />
 		<Unit filename="SiriusEngine/PScene/IScene.hpp" />
 		<Unit filename="SiriusEngine/PScene/Image.cpp" />
 		<Unit filename="SiriusEngine/PScene/Image.hpp" />
@@ -96,6 +113,8 @@
 		<Unit filename="SiriusEngine/PSystem/Rectangle.hpp" />
 		<Unit filename="SiriusEngine/PSystem/Rectangle.tpp" />
 		<Unit filename="SiriusEngine/PSystem/SfmlTypeTrad.hpp" />
+		<Unit filename="SiriusEngine/PSystem/Util.cpp" />
+		<Unit filename="SiriusEngine/PSystem/Util.hpp" />
 		<Unit filename="SiriusEngine/PSystem/Vector2.hpp" />
 		<Unit filename="SiriusEngine/PSystem/Vector2.tpp" />
 		<Unit filename="SiriusEngine/SiriusEngine.hpp" />

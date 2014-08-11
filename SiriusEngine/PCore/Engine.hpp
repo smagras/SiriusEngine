@@ -1,8 +1,3 @@
-/*
- * File:   CEngine.hpp
- * Created on 27 janvier 2014, 00:06
- * */
-
 /**
  * @author Magras Steve
  * @class sir::PCore::CEngine
@@ -47,6 +42,7 @@ namespace PCore{
 
 
 class Engine : public Node{
+
 public:
     Engine();
     virtual ~Engine();

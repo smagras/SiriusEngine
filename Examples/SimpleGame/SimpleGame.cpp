@@ -1,14 +1,16 @@
-#include "MapISO.hpp"
+#include "SimpleGame.hpp"
 
 namespace Examples{
 
-void MapISO::start()
+void SimpleGame::start()
 {
 
     //sir::PCore::Engine * myApp = new sir::PCore::Engine();
     this->init(1024,768,"Hello world");
 
     this->getImageManager()->load("Examples/Resources/Images/terrain.png");
+    this->getImageManager()->load("Examples/Resources/Images/character.bmp");
+
 
 
     // Création de la game
@@ -20,9 +22,20 @@ void MapISO::start()
     isomap->use(this->getImageManager()->get("Examples/Resources/Images/terrain.png"));
     game->add(isomap);
 
-    // Création de l'interface
+    // Developper box
     sir::PPlugin::Standard::Dbox::DBox * debugbox = new  sir::PPlugin::Standard::Dbox::DBox();
     debugbox->setPosition(sir::PSystem::Vector2F(10,10));
+
+
+    // Entity
+
+    sir::PGame::Entity * entity01 = new sir::PGame::Entity();
+    /*entity01->use(this->getImageManager()->get("Examples/Resources/Images/character.bmp"));
+    entity01->init(sir::PSystem::RectangleI(0,0,32,32),5,200);
+    entity01->play();
+    entity01->setPosition(sir::PSystem::Vector2F(100,100));
+    entity01->setSize(sir::PSystem::Vector2F(40,40));*/
+    game->add(entity01);
 
 
     // Création de la scene
@@ -34,25 +47,26 @@ void MapISO::start()
 
 
 
+
     // Events
 
     this->getEventManager()->bindKeyPress(this,sf::Keyboard::Left, SIRCallback {
-        MapISO* eng = (MapISO*)e;
+        SimpleGame* eng = (SimpleGame*)e;
         eng->game->setCameraPosition(sir::PSystem::Vector2F(eng->game->getCameraPosition().x-50,eng->game->getCameraPosition().y));
     });
 
     this->getEventManager()->bindKeyPress(this,sf::Keyboard::Right, SIRCallback {
-        MapISO* eng = (MapISO*)e;
+        SimpleGame* eng = (SimpleGame*)e;
         eng->game->setCameraPosition(sir::PSystem::Vector2F(eng->game->getCameraPosition().x+50,eng->game->getCameraPosition().y));
     });
 
     this->getEventManager()->bindKeyPress(this,sf::Keyboard::Up, SIRCallback {
-        MapISO* eng = (MapISO*)e;
+        SimpleGame* eng = (SimpleGame*)e;
         eng->game->setCameraPosition(sir::PSystem::Vector2F(eng->game->getCameraPosition().x,eng->game->getCameraPosition().y-50));
     });
 
     this->getEventManager()->bindKeyPress(this,sf::Keyboard::Down, SIRCallback {
-        MapISO* eng = (MapISO*)e;
+        SimpleGame* eng = (SimpleGame*)e;
         eng->game->setCameraPosition(sir::PSystem::Vector2F(eng->game->getCameraPosition().x,eng->game->getCameraPosition().y+50));
     });
 

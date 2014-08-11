@@ -10,7 +10,10 @@
 
 #include "Game.hpp"
 #include "GameElement.hpp"
+#include "Entity.hpp"
 #include "ISOMap.hpp"
+
+
 
 #endif	/* IGAME_HPP */
 

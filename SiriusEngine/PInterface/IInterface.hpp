@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   IInterface.hpp
  * Author: STEVE
  *
@@ -8,6 +8,8 @@
 #ifndef IINTERFACE_HPP
 #define	IINTERFACE_HPP
 
+#include "InterfaceElement.hpp"
+#include "Panel.hpp"
 
 
 #endif	/* IINTERFACE_HPP */

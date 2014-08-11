@@ -1,19 +1,21 @@
 # depslib dependency file v1.0
-1407081377 source:c:\users\steve\desktop\projet\siriusproject\main.cpp
-	"Examples/MapISO/MapISO.hpp"
+1407696644 source:c:\users\steve\desktop\projet\siriusproject\main.cpp
+	"Examples/SimpleGame/SimpleGame.hpp"
 
-1405030599 c:\users\steve\desktop\projet\siriusproject\siriusengine\siriusengine.hpp
+1407698068 c:\users\steve\desktop\projet\siriusproject\siriusengine\siriusengine.hpp
 	"PSystem/ISystem.hpp"
 	"PScene/IScene.hpp"
 	"PCore/ICore.hpp"
 	"PInterface/IInterface.hpp"
 	"PGame/IGame.hpp"
 	"PEvent/IEvent.hpp"
+	"PPlugin/IPlugin.hpp"
 
-1405537803 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\isystem.hpp
+1407690552 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\isystem.hpp
 	"SfmlTypeTrad.hpp"
 	"Vector2.hpp"
 	"Rectangle.hpp"
+	"Util.hpp"
 
 1405548308 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\vector2.hpp
 	<math.h>
@@ -28,7 +30,7 @@
 	"Engine.hpp"
 	"Element.hpp"
 
-1407077168 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.hpp
+1407697066 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.hpp
 	"../stdafx.hpp"
 	"../predef.hpp"
 	"ImageManager.hpp"
@@ -36,7 +38,7 @@
 	"../PScene/Scene.hpp"
 	"../PEvent/EventManager.hpp"
 
-1407077122 c:\users\steve\desktop\projet\siriusproject\siriusengine\predef.hpp
+1407698413 c:\users\steve\desktop\projet\siriusproject\siriusengine\predef.hpp
 
 1407077366 c:\users\steve\desktop\projet\siriusproject\siriusengine\stdafx.hpp
 	<iostream>
@@ -469,7 +471,7 @@
 	<SFML/Network/Socket.hpp>
 	<vector>
 
-1407077478 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\element.hpp
+1407697066 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\element.hpp
 	"../stdafx.hpp"
 	"../predef.hpp"
 	"Node.hpp"
@@ -481,11 +483,14 @@
 	"Image.hpp"
 	"Sprite.hpp"
 
-1391422130 c:\users\steve\desktop\projet\siriusproject\siriusengine\pinterface\iinterface.hpp
+1407096711 c:\users\steve\desktop\projet\siriusproject\siriusengine\pinterface\iinterface.hpp
+	"InterfaceElement.hpp"
+	"Panel.hpp"
 
-1407011548 c:\users\steve\desktop\projet\siriusproject\siriusengine\pgame\igame.hpp
+1407698201 c:\users\steve\desktop\projet\siriusproject\siriusengine\pgame\igame.hpp
 	"Game.hpp"
 	"GameElement.hpp"
+	"Entity.hpp"
 	"ISOMap.hpp"
 
 1405552036 c:\users\steve\desktop\projet\siriusproject\siriusengine\pevent\ievent.hpp
@@ -494,7 +499,7 @@
 1405548432 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\element.cpp
 	"Element.hpp"
 
-1407065570 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.cpp
+1407100601 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\engine.cpp
 	"Engine.hpp"
 
 1405061030 c:\users\steve\desktop\projet\libs\sfml-2.1\include\sfml\audio.hpp
@@ -566,7 +571,7 @@
 1404949169 c:\users\steve\desktop\projet\siriusproject\examples\helloworld\helloworld.hpp
 	"../../SiriusEngine/SiriusEngine.hpp"
 
-1407077781 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\scene.hpp
+1407101257 c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\scene.hpp
 	"../stdafx.hpp"
 	"../predef.hpp"
 	"Node.hpp"
@@ -574,7 +579,7 @@
 	"../PCore/Engine.hpp"
 	"../PCore/Element.hpp"
 
-1406993086 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\scene.cpp
+1407691233 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\scene.cpp
 	"Scene.hpp"
 
 1405357942 c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\image.hpp
@@ -605,7 +610,7 @@
 	"../predef.hpp"
 	"Image.hpp"
 
-1406990428 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\sprite.cpp
+1407697173 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pscene\sprite.cpp
 	"Sprite.hpp"
 
 1405455103 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\rectangle.hpp
@@ -614,7 +619,7 @@
 1405640574 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\rectangle.tpp
 	"Rectangle.hpp"
 
-1405547528 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\sfmltypetrad.hpp
+1407690151 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\sfmltypetrad.hpp
 	"../stdafx.hpp"
 
 1405536598 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\triggeringtimer.hpp
@@ -662,7 +667,7 @@
 1406993828 c:\users\steve\desktop\projet\siriusproject\examples\map\map.hpp
 	"../../SiriusEngine/SiriusEngine.hpp"
 
-1407078229 source:c:\users\steve\desktop\projet\siriusproject\examples\mapiso\mapiso.cpp
+1407692118 source:c:\users\steve\desktop\projet\siriusproject\examples\mapiso\mapiso.cpp
 	"MapISO.hpp"
 
 1407018820 c:\users\steve\desktop\projet\siriusproject\examples\mapiso\mapiso.hpp
@@ -686,7 +691,7 @@
 	"../PScene/Scene.hpp"
 	"../PGame/GameElement.hpp"
 
-1407011548 c:\users\steve\desktop\projet\siriusproject\siriusengine\pgame\gameelement.hpp
+1407699009 c:\users\steve\desktop\projet\siriusproject\siriusengine\pgame\gameelement.hpp
 	"../stdafx.hpp"
 	"../predef.hpp"
 	"../PCore/Element.hpp"
@@ -700,4 +705,60 @@
 
 1407077122 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pcore\node.cpp
 	"Node.hpp"
+
+1407101365 c:\users\steve\desktop\projet\siriusproject\siriusengine\pinterface\panel.hpp
+	"../stdafx.hpp"
+	"../predef.hpp"
+	"../PScene/Scene.hpp"
+	"../PInterface/InterfaceElement.hpp"
+
+1407100950 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pinterface\panel.cpp
+	"Panel.hpp"
+
+1407096456 c:\users\steve\desktop\projet\siriusproject\siriusengine\pinterface\interfaceelement.hpp
+	"../stdafx.hpp"
+	"../predef.hpp"
+	"../PCore/Element.hpp"
+
+1407096456 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pinterface\interfaceelement.cpp
+	"InterfaceElement.hpp"
+
+1407097509 c:\users\steve\desktop\projet\siriusproject\siriusengine\pplugin\iplugin.hpp
+	"Standard/IStandard.hpp"
+
+1407097509 c:\users\steve\desktop\projet\siriusproject\siriusengine\pplugin\standard\istandard.hpp
+	"DBox/IDBox.hpp"
+
+1407097732 c:\users\steve\desktop\projet\siriusproject\siriusengine\pplugin\standard\dbox\idbox.hpp
+	"DBox.hpp"
+
+1407688335 c:\users\steve\desktop\projet\siriusproject\siriusengine\pplugin\standard\dbox\dbox.hpp
+	"../../../stdafx.hpp"
+	"../../../predef.hpp"
+	"../../../PInterface/Panel.hpp"
+
+1407691254 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pplugin\standard\dbox\dbox.cpp
+	"DBox.hpp"
+
+1407690689 c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\util.hpp
+	"../stdafx.hpp"
+
+1407690815 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\psystem\util.cpp
+	"Util.hpp"
+
+1407699549 source:c:\users\steve\desktop\projet\siriusproject\examples\simplegame\simplegame.cpp
+	"SimpleGame.hpp"
+
+1407696609 c:\users\steve\desktop\projet\siriusproject\examples\simplegame\simplegame.hpp
+	"../../SiriusEngine/SiriusEngine.hpp"
+
+1407699533 c:\users\steve\desktop\projet\siriusproject\siriusengine\pgame\entity.hpp
+	"../stdafx.hpp"
+	"../predef.hpp"
+	"../PGame/GameElement.hpp"
+	"../PScene/Sprite.hpp"
+	"../PGame/Game.hpp"
+
+1407699570 source:c:\users\steve\desktop\projet\siriusproject\siriusengine\pgame\entity.cpp
+	"Entity.hpp"
 

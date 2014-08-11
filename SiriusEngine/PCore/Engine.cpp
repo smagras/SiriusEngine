@@ -60,7 +60,10 @@ void Engine::run(){
         {
             if(needUpdate) scenes->at(i)->update();
             scenes->at(i)->draw();
+            this->render->draw(*scenes->at(i)->spriteRender);
         }
+
+
 
 
 
@@ -68,7 +71,7 @@ void Engine::run(){
 
         framerate =  1 / clockFPS.getElapsedTime().asSeconds() ;
 
-        cout << this->getFramerate() << endl;
+        //cout << this->getFramerate() << endl;
 
     }
 

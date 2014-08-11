@@ -7,8 +7,6 @@ Sprite::Sprite() : Image::Image()
 {
     setType(sir::PCore::ELEMENT_SPRITE);
     isPlaying = false;
-
-
 }
 
 Sprite::~Sprite()
