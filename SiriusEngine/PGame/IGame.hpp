@@ -10,6 +10,7 @@
 
 #include "Game.hpp"
 #include "GameElement.hpp"
+#include "EntityAnimation.hpp"
 #include "Entity.hpp"
 #include "ISOMap.hpp"
 

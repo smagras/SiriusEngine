@@ -13,6 +13,7 @@
 #include "Vector2.hpp"
 #include "Rectangle.hpp"
 #include "Util.hpp"
+#include "Singleton.hpp"
 
 #endif	/* ISYSTEM_HPP */
 

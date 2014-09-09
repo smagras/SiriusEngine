@@ -4,7 +4,7 @@
 #include "../stdafx.hpp"
 #include "../predef.hpp"
 #include "../PGame/GameElement.hpp"
-#include "../PScene/Sprite.hpp"
+
 
 namespace sir{
 namespace PGame{
@@ -17,14 +17,19 @@ class Entity : public sir::PGame::GameElement
         /** Default destructor */
         virtual ~Entity();
 
+        void setScene(PScene::Scene * _scene);
 
 
+        void use(sf::Texture * _texture);
         void draw();
         void update();
 
-    private:
-        sir::PScene::Sprite sprite;
+        void addAnimation(sir::PGame::EntityAnimation animation);
+        void playAnimation(string name);
 
+    private:
+        sir::PScene::Sprite * sprite;
+        std::map<std::string, sir::PGame::EntityAnimation > *animations;
 
 };
 
@@ -32,5 +37,7 @@ class Entity : public sir::PGame::GameElement
 }
 
 #include "../PGame/Game.hpp"
+#include "../PGame/EntityAnimation.hpp"
+#include "../PScene/Sprite.hpp"
 
 #endif // ENTITY_HPP

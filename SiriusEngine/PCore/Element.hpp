@@ -49,7 +49,7 @@ public:
     */
     virtual void update() = 0;
 
-    void setScene(PScene::Scene * _scene) {scene = _scene;}
+    virtual void setScene(PScene::Scene * _scene) {scene = _scene;}
     PScene::Scene * getScene() {return scene;}
 
     void setType(ElementType t) {type = t;}

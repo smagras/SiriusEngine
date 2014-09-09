@@ -31,9 +31,13 @@ class ImageManager
         */
         sf::Texture*  get(string file);
 
+        sf::Texture getDefaultTexture() {return defaultTexture;}
+
     private:
         std::vector<string>* imagesF;
         std::vector<sf::Texture*>* images;
+        sf::Texture defaultTexture;
+
 };
 
 

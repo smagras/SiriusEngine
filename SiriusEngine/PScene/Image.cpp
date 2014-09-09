@@ -9,6 +9,7 @@ Image::Image()
     setType(sir::PCore::ELEMENT_IMAGE);
     sprite = new sf::Sprite();
 
+
 }
 
 Image::~Image()
@@ -36,6 +37,8 @@ void Image::draw(){
     }
 
 }
+
+
 
 void Image::updateGraphic(){
 

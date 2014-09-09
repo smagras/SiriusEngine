@@ -7,6 +7,7 @@ ImageManager::ImageManager()
 {
     images = new std::vector<sf::Texture*>;
     imagesF = new std::vector<string>;
+    defaultTexture.create(100, 100);
 }
 
 

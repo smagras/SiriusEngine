@@ -31,7 +31,7 @@ class Scene : public sir::PCore::Graphic, public sir::PCore::Node
         /**
         * Calcul the scene
         */
-        void update();
+        virtual void update();
 
         /**
         * Add an element to the scene

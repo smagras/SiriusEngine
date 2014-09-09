@@ -22,6 +22,7 @@ class Image : public sir::PCore::Element
         /** Get only the image part inside rect */
         void crop(sir::PSystem::RectangleI _coords);
 
+
         void draw();
         void update();
         void updateGraphic();
@@ -35,6 +36,8 @@ class Image : public sir::PCore::Element
 
 }
 }
+
+#include "../PCore/ImageManager.hpp"
 
 
 #endif // IMAGE_H

@@ -65,6 +65,10 @@ void Scene::draw(){
  }
 
 void Scene::update(){
+    for (unsigned i=0; i< scenes->size(); i++)
+    {
+        scenes->at(i)->update();
+    }
 
     for (unsigned i=0; i< elements->size(); i++)
     {

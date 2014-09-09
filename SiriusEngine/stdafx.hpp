@@ -26,6 +26,7 @@
 #include <sstream>
 #include <deque>
 #include <typeinfo>
+#include <map>
 
 // SFML
 #include <SFML/Graphics.hpp>

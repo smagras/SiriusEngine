@@ -32,6 +32,7 @@ namespace sir{
     namespace PGame{
 
         class Game;
+        class EntityAnimation;
         class GameElement;
         class ISOMap;
         class Entity;

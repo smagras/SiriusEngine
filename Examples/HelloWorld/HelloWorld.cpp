@@ -25,8 +25,8 @@ void HelloWorld::run()
     sprite01->use(myApp->getImageManager()->get("Examples/Resources/Images/character.bmp"));
     sprite01->init(sir::PSystem::RectangleI(0,0,32,32),5,200);
     sprite01->play();
-    sprite01->setPosition(sir::PSystem::Vector2F(100,100));
-    sprite01->setSize(sir::PSystem::Vector2F(40,40));
+    //sprite01->setPosition(sir::PSystem::Vector2F(100,100));
+    //sprite01->setSize(sir::PSystem::Vector2F(40,40));
     scene01->add(sprite01);
 
     myApp->getEventManager()->bindRightClick(sprite01, SIRCallback {

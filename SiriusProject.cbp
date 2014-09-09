@@ -58,10 +58,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="../LIBS/SFML-2.1/include" />
+			<Add directory="../../LIBS/SFML-2.1/include" />
 		</Compiler>
 		<Linker>
-			<Add directory="../LIBS/SFML-2.1/lib" />
+			<Add directory="../../LIBS/SFML-2.1/lib" />
 		</Linker>
 		<Unit filename="Examples/HelloWorld/HelloWorld.cpp" />
 		<Unit filename="Examples/HelloWorld/HelloWorld.hpp" />
